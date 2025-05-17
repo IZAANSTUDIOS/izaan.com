@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Izaan's Game Hub</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('gtalogo.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      animation: slideDown 1.2s ease;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 44px;
+      text-shadow: 2px 2px 10px black;
+      color: #00ffe7;
+      letter-spacing: 2px;
+    }
+
+    .section {
+      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.6);
+      margin: 60px auto;
+      padding: 50px;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1.2s forwards;
+    }
+
+    .section:nth-of-type(2) {
+      animation-delay: 0.7s;
+    }
+
+    .section:nth-of-type(3) {
+      animation-delay: 1.2s;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #29abe2;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.9;
+      margin-bottom: 20px;
+      color: #e0f7ff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      padding: 15px 30px;
+      font-size: 20px;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .section {
+        padding: 30px;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Izaan's Game Hub</h1>
+  </header>
+
+  <div class="section">
+    <h2>GTA 7 - The Next Generation of Open World</h2>
+    <p>
+      Welcome to the future of gaming! GTA 7 is the most awaited entry in the Grand Theft Auto series,
+      set in a futuristic city with ultra-realistic weather systems, neon-lit districts, and flying cars.
+      Explore a world where every building is accessible and every choice affects the story.
+    </p>
+    <p>
+      New features include AI gangs that fight for power, cyber hacking tools, custom vehicles with rocket boosters,
+      and online multiplayer missions with friends. Are you ready to become the legend of Los Vortex?
+    </p>
+    <a href="gta.html" class="btn">Download GTA 7</a>
+  </div>
+
+  <div class="section">
+    <h2>Minecraft Mods & Shaders - Make Your Game Look Amazing</h2>
+    <p>
+      Take Minecraft beyond blocks! With powerful shader packs, you’ll get real-time shadows, glowing lava,
+      waving trees, and beautiful skies. Mods like “FurnitureCraft” and “Pixelmon” add whole new gameplay dimensions.
+    </p>
+    <p>
+      This hub offers ready-to-download mods for both PC (TLauncher) and Android (Bedrock). Whether you want realism,
+      fantasy, or tech — we've got mods to power up your world. Step into a Minecraft you've never seen before!
+    </p>
+    <a href="minecraft.html" class="btn">Download Minecraft Mods</a>
+  </div>
+
+</body>
+</html>

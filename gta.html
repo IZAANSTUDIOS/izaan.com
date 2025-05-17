@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GTA 7 - Download</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('gtalogo.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: rgba(0,0,0,0.7);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      font-size: 40px;
+      color: #00ffe7;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 20px 0;
+      color: #d4faff;
+    }
+
+    .download {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      padding: 15px 25px;
+      margin: 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      transform: scale(1.05);
+    }
+
+    .back-home {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #88e3ff;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back-home" href="index.html">← Back to Home</a>
+    <h1>Download GTA 7</h1>
+    <p>The game is under devlopment it will be avialable soon.</p>
+    <div class="download">
+      <a href="files/GTA7-Windows.exe" class="btn">Download for Windows</a>
+      <a href="files/GTA7-Android.apk" class="btn">Download for Android</a>
+    </div>
+  </div>
+</body>
+</html>

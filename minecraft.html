@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minecraft Mods & Shaders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('gtalogo.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: rgba(0,0,0,0.7);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      font-size: 38px;
+      color: #00ffe7;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #e0f7ff;
+      margin: 20px 0;
+    }
+
+    .mods-list {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .mod {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid #00d2ff;
+      transition: transform 0.3s ease;
+    }
+
+    .mod:hover {
+      transform: scale(1.02);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+    }
+
+    .back-home {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #88e3ff;
+      text-decoration: underline;
+    }
+
+    #downloadingBox {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #00c6ff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 10px auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back-home" href="index.html">← Back to Home</a>
+    <h1>Minecraft Mods & Shaders</h1>
+    <p>
+      Upgrade your Minecraft experience with powerful shader Complementary Reimagined for PC. Download Tlauncher for PC.
+      Get Minecraft for free. It is 100% safe and tested by our professionals.
+    </p>
+
+    <div class="mods-list">
+      <div class="mod">
+        <h3>Complementary Reimagined Shader Pack version 1.21.5 (PC)</h3>
+        <p>Super realistic shadows, reflections and sunlight for your Minecraft world.</p>
+        <a class="btn" href="files/ComplementaryReimagined_r5.4.zip">Download Shader</a>
+      </div>
+
+      <div class="mod">
+        <h3>TLauncher (PC)</h3>
+        <p>Download TLauncher to play Minecraft on PC.</p>
+        <a class="btn" href="files/TLauncher-Installer-1.8.0.exe">Download TLauncher</a>
+      </div>
+
+      <div class="mod">
+        <h3>Minecraft 1.20.80 (Android)</h3>
+        <p>Click on download to play Minecraft on your phone.</p>
+        <a class="btn" onclick="startFakeDownload()">Download for Android</a>
+
+        <div id="downloadingBox" style="display:none;">
+          <p>Preparing your download...</p>
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function startFakeDownload() {
+      document.getElementById("downloadingBox").style.display = "block";
+
+      setTimeout(() => {
+        window.open("https://www.mediafire.com/file/pbfp5xvmmgfe6za/minecraft-1-21-80.apk/file", "_blank");
+        document.getElementById("downloadingBox").style.display = "none";
+      }, 3000); // 3 seconds wait
+    }
+  </script>
+</body>
+</html>
